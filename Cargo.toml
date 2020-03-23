@@ -1,0 +1,18 @@
+[package]
+name = "ods"
+version = "0.1.0"
+authors = ["ymgyt <yamaguchi7073xtt@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "2.33.0"
+tokio = {version = "0.2.13", features = ["full"]}
+tracing = "0.1.13"
+tracing-subscriber = "0.2.3"
+rand = "0.7.3"
+
+[[bin]]
+name = "gen-input"
+path = "src/bin/gen_input.rs"
